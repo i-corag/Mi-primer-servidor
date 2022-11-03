@@ -1,0 +1,125 @@
+footer {
+    width: 100%;
+    padding: 1em;
+    position:relative;
+    bottom: 0;
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-navbar{
+    display:none;
+}
+.footer-newsletterbox , .footer-media , .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-media p {
+    padding: .25em .25em;
+    text-align: center;
+    color: var(--second-color);
+    font-size: small;
+}
+.footer-icon {
+    padding: .25em .25em;
+    background-color: var(--first-color);
+    border: none;
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.footer-icon:hover {
+    color: var(--third-color);
+    opacity: .8;
+    cursor: pointer;
+} 
+.footer-newsletterbox {
+    margin: 1.5em 0;
+}
+.footer-newsletter label {
+    text-transform:uppercase;
+    color: var(--third-color);
+    font-family: 'Spectral+SC';
+    font-size: 1.2em;
+}
+.footer-newsletter div {
+    display: flex;
+}
+button {
+    border: .1em solid var(--third-color);
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    text-transform:uppercase;
+    padding: .5em .5em;    
+}
+input {
+    padding: .5em .5em;  
+    border: .1em solid var(--third-color);
+    outline: none;
+    border-color: var(--third-color);
+}
+.terms {
+    color: var(--fourth-color);
+    font-size: x-small;
+}
+.terms a {
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-weight: bolder;
+}
+.footer-copyrigths {
+    color: var(--fourth-color);
+    font-size: small;
+}
+
+/* TABLET */
+@media (min-width: 768px){
+    .footer-contenido {
+        width: 100%;
+        display: flex;
+        gap:8em;
+        align-items: center;
+    }
+    .footer-navbar , .footer-media , .footer-newsletterbox {
+        width: 30%;
+    }
+    .footer-navbar{
+        margin-left: .5em;
+        display: flex;
+        flex-direction: column;
+        }
+    .footer-a {
+        padding: .3em;
+        text-decoration: none;
+        color: var(--fourth-color);
+        font-size: medium;
+        font-weight:500;
+    }
+    .footer-a:hover {
+        color: var(--third-color);
+        opacity: .8;
+        cursor: pointer;
+    }
+    .footer-media{
+        font-size: x-large;
+    }
+    .footer-media p {
+        font-size: large;
+    }
+    .footer-newsletter label {
+        padding: 0.3em;
+        font-size: 1.4em;
+    }
+    .terms {
+        color: var(--fourth-color);
+        font-size: x-small;
+        padding: .6em;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {}
