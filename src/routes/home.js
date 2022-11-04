@@ -1,12 +1,12 @@
 const express = require('express');
-const router = express.Router();
+
 const path = require ("path");
 
+const router = express.Router(); /* Inicializamos un enrutador*/
 
-
-/* ruta que envia un archivo html */
+/* ruta*/
 router.get ("/", (req,res) => {
-    res.sendFile (path.join(__dirname,"../../views/home.html"));
+    return res.status(200).render("vistas/home.ejs");
 })
 
 module.exports = router;

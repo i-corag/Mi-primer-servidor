@@ -1,16 +1,16 @@
-
+const path = require('path');
 
 require ('dotenv').config();
 
 const express = require('express');
-
 const app = express();
 
 
 const homeRoutes = require ("./routes/home");
 const productsRoutes = require ("./routes/products");
 
-app.use(express.static("src/views")); /* para que funcione css */
+app.use(express.static(path.join(__dirname,"../public"))); /* para que funcione css */
+app.set ("view engine", "ejs");
 
 app.use( "/" , homeRoutes);
 app.use( "/products" , productsRoutes);
